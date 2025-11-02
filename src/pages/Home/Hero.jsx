@@ -12,7 +12,7 @@ const Hero = () => {
     >
       <div className="text-center">
         <motion.h1
-          className="md:text-5xl sm:text-4xl font-bold text-white font-poppins"
+          className="text-4xl md:text-5xl sm:text-4xl font-bold text-white font-poppins"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: 'easeOut' }}
