@@ -1,7 +1,7 @@
 import React from "react";
 import { Facebook, Twitter, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
-import logo from "./img/ScofieldLogo.png";
-
+import { Link } from "react-router-dom"; // <-- import Link
+import logo from "../img/ScofieldLogo.png";
 
 const Footer = () => {
   return (
@@ -15,15 +15,41 @@ const Footer = () => {
             global leaders through quality education and research.
           </p>
         </div>
- 
+
+        {/* Quick Links */}
         <div>
           <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
           <ul className="space-y-2 text-gray-200 text-sm">
-            <li><a href="#about" className="hover:underline">About Us</a></li>
-            <li><a href="#admissions" className="hover:underline">Admissions</a></li>
-            <li><a href="#faculty" className="hover:underline">Faculties</a></li>
-            <li><a href="#news" className="hover:underline">News & Events</a></li>
-            <li><a href="#contact" className="hover:underline">Contact Us</a></li>
+            <li>
+              <Link to="/about" className="hover:underline">
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link to="/admission" className="hover:underline">
+                Admissions
+              </Link>
+            </li>
+            <li>
+              <Link to="/programs" className="hover:underline">
+                Programs
+              </Link>
+            </li>
+            <li>
+              <Link to="/faculties" className="hover:underline">
+                Faculties
+              </Link>
+            </li>
+            <li>
+              <Link to="/news-and-events" className="hover:underline">
+                News & Events
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:underline">
+                Contact Us
+              </Link>
+            </li>
           </ul>
         </div>
 

@@ -8,6 +8,6 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-
-  base: '/Scofield-University/',
-})
+  base: '/',
+  // base: '/Scofield-University/',
+});
