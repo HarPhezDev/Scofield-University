@@ -4,7 +4,7 @@ import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 const SocialBar = () => {
   const socialLinks = [
     { id: 1, icon: <Facebook size={20} />, href: "https://facebook.com" },
-    { id: 2, icon: <Twitter size={20} />, href: "https://twitter.com" },
+    { id: 2, icon: <Twitter size={20} />, href: "https://https://x.com/har_phez_dev" },
     { id: 3, icon: <Instagram size={20} />, href: "https://instagram.com" },
     { id: 4, icon: <Linkedin size={20} />, href: "https://linkedin.com" },
   ];

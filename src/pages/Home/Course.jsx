@@ -1,11 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom"; // <-- import Link
 import Engineering from "./img/Engineering-Pics.jpg";
 import MBBS from "./img/MBBS.jpg";
 import Law from "./img/Lawyer-pic.jpg";
 import ComputerScience from "./img/CS-Pic.jpg";
 
-const Courses = () => {
+const Course = () => {
   const CoursesList = [
     {
       id: 1,
@@ -56,7 +57,7 @@ const Courses = () => {
 
   return (
     <div className="w-full bg-gray-50 px-6 md:px-10 lg:px-16 py-24">
-      {/* Header */}
+    
       <motion.div
         className="text-center max-w-2xl mx-auto mb-16"
         initial={{ opacity: 0, y: 40 }}
@@ -77,7 +78,7 @@ const Courses = () => {
         </p>
       </motion.div>
 
-      {/* Course Cards */}
+     
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
         {CoursesList.map((course, index) => (
           <motion.a
@@ -110,7 +111,7 @@ const Courses = () => {
         ))}
       </div>
 
-      {/* Button */}
+    
       <motion.div
         className="flex justify-center mt-16"
         initial={{ opacity: 0, y: 40 }}
@@ -118,17 +119,15 @@ const Courses = () => {
         transition={{ duration: 0.6, delay: 0.8 }}
         viewport={{ once: true }}
       >
-        <motion.a
-          href="#all-courses"
+        <Link
+          to="/courses" // <-- navigate to /courses
           className="inline-block text-[15px] text-white bg-[#1227e2] font-medium rounded-xl shadow hover:shadow-lg transition px-6 py-3 hover:bg-[#0f20b5]"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
         >
           See All Courses
-        </motion.a>
+        </Link>
       </motion.div>
     </div>
   );
 };
 
-export default Courses;
+export default Course;
