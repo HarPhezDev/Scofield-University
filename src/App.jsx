@@ -16,10 +16,8 @@ const App = () => {
     <Router>
       <Navbar />
       <SocialBar />
-      {/* <Footer /> */}
-
       <Routes>
-        <Route path="/" element={<Home />} />            {/* Root path */}
+        <Route path="/" element={<Home />} />         
         <Route path="/admission" element={<Admission />} />
         <Route path="/faculty" element={<Faculty />} />
         <Route path="/courses" element={<Courses />} />
@@ -27,6 +25,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/news-events" element={<NewsAndEvent />} />
       </Routes>
+         <Footer />
     </Router>
   );
 };

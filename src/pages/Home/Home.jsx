@@ -10,11 +10,11 @@ import NewsAndEvents from "./NewsAndEvents.jsx";
 import SocialBar from "../../components/SocialBar.jsx";
 import CampusView from "./CampusView.jsx";
 import Map from "./Map.jsx";
-import Footer from "../../components/Footer.jsx";
+
 
 const Home = () => {
   return (
-    <div style={{ paddingTop: "80px" }}> {/* prevent content being hidden by fixed navbar */}
+    <div style={{ paddingTop: "80px" }}> 
       <Hero />
       <Program />
       <Course />
@@ -25,7 +25,7 @@ const Home = () => {
       <SocialBar />
       <CampusView />
       <Map />
-      <Footer />
+   
     </div>
   );
 };
